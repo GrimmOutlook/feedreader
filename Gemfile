@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-
 gem 'rails', '4.2.4'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -18,13 +16,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'feedjira'
-gem 'twitter-bootstrap-rails'
-
-
-
-
-
-
+gem 'bootstrap-sass', '~> 3.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

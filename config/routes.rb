@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
 
+  # resources :feeds do
+  #   member do
+  #     resources :entries, only: [:index, :show]
+  #   end
+  # end
+
+
   resources :feeds do
-    member do
-      resources :entries, only: [:index, :show]
-    end
+    resources :entries, only: [:index, :show]
   end
 
-  resources :feeds
+  resources :entries, only: [:index, :show]
 
   root 'feeds#index'
   # The priority is based upon order of creation: first created -> highest priority.
